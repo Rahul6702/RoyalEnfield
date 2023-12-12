@@ -1,0 +1,141 @@
+
+@media screen and (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+        margin-right: 4%;
+
+    }
+    .header{
+        padding: 1.5rem 2%;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(90deg);
+        
+    }
+    .header .flex{
+        position: relative;
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top:99%;
+        left: 0;
+        right: 0;
+        margin-top: 23px;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+        clip-path:polygon(0 0,100% 0 , 100% 0, 0 0) ;
+        transition: .2s linear;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+        background-color: white;
+    }
+    .header .flex .navbar.active{
+        clip-path:polygon(0 0, 100% 0 , 100% 100%, 0 100%) ;
+    }
+    .header .flex .navbar a{
+        display: block;
+        margin: 1.2rem;
+    }
+    /* hero mediaquery */
+    .hero{
+        height: 100vh;
+    }
+    .hero-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .hero-image{
+        width: 100%;  
+    }
+    .hero-image img{
+        width: 100%;
+        height: 280px;
+    }
+    /*  */
+   .hero-container{
+    overflow-x:hidden ;
+    margin-left: -40px;
+    width: 100vw;
+
+   }
+    .btn a{
+        display: block;
+        text-align: center;
+    }
+    
+    .box img{
+        padding: 1rem;
+        width: 100px; 
+    }
+    .icon{
+        background-color: #fff;
+        border-radius: 11px;
+        box-shadow:0px 3px 10px rgba(0,0,0,0.1) ;
+        margin: 10px;
+    }
+    
+    .hero-message{
+        margin-bottom: -140px;
+    }
+    .hero-message p{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .child-bike2{
+        flex-basis: 100%;
+        
+    }
+    
+    .single-detail{
+        flex-basis: 45%;
+       
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        width: 100vw;
+    }
+    .about-content h1{
+        font-size: 2rem;
+    }
+    .card-box{
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+    .image-card{
+        width: 95vw;
+       margin-left: -45px;
+      
+    }
+    /* 5th */
+    .icon{
+        width:10.875rem;
+        height: 6.5rem;
+    }
+
+    .review{
+      flex-direction: column;
+      width:90vw;
+    }
+    .review-image img{
+       float: none;
+       border-radius: 0;
+       margin-top: 2rem;
+    }
+    
+}
+
+/* 6ht */
+@media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+  /* 6th end */
